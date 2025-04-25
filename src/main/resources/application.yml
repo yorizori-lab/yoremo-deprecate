@@ -2,9 +2,17 @@ spring:
   application:
     name: yoremo
 
+
   r2dbc:
-    url: r2dbc:mysql://localhost:3306/yoremo
-    username: root
+    url: r2dbc:postgresql://localhost:5432/test
+    username: postgres
     password: admin
     pool:
       enabled: true
+  jpa:
+    open-in-view: false
+
+logging:
+    level:
+        org.springframework.web: DEBUG
+        org.springframework.r2dbc: DEBUG
