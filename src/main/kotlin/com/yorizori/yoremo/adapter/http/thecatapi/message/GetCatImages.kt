@@ -1,4 +1,4 @@
-package com.yorizori.yoremo.http.thecatapi.message
+package com.yorizori.yoremo.adapter.http.thecatapi.message
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies
 import com.fasterxml.jackson.databind.annotation.JsonNaming

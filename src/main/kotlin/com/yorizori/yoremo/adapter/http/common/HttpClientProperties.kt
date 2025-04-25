@@ -1,4 +1,4 @@
-package com.yorizori.yoremo.http.common
+package com.yorizori.yoremo.adapter.http.common
 
 open class HttpClientProperties (
     var baseUrl: String? = null,

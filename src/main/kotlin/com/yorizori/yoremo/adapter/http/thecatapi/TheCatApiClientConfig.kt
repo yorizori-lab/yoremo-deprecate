@@ -1,6 +1,6 @@
-package com.yorizori.yoremo.http.thecatapi
+package com.yorizori.yoremo.adapter.http.thecatapi
 
-import com.yorizori.yoremo.http.common.HttpClientProperties
+import com.yorizori.yoremo.adapter.http.common.HttpClientProperties
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

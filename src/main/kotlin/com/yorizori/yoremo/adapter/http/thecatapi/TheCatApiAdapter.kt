@@ -1,7 +1,7 @@
-package com.yorizori.yoremo.http.thecatapi
+package com.yorizori.yoremo.adapter.http.thecatapi
 
-import com.yorizori.yoremo.http.common.HttpClientProperties
-import com.yorizori.yoremo.http.thecatapi.message.GetCatImages
+import com.yorizori.yoremo.adapter.http.common.HttpClientProperties
+import com.yorizori.yoremo.adapter.http.thecatapi.message.GetCatImages
 import io.netty.handler.logging.LogLevel
 import kotlinx.coroutines.flow.Flow
 import org.springframework.beans.factory.annotation.Qualifier

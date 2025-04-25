@@ -1,8 +1,8 @@
 package com.yorizori.yoremo.api.sample.usecase
 
 import com.yorizori.yoremo.api.sample.controller.message.GetCats
-import com.yorizori.yoremo.http.thecatapi.TheCatApiAdapter
-import com.yorizori.yoremo.http.thecatapi.message.GetCatImages
+import com.yorizori.yoremo.adapter.http.thecatapi.TheCatApiAdapter
+import com.yorizori.yoremo.adapter.http.thecatapi.message.GetCatImages
 import kotlinx.coroutines.flow.toList
 import org.springframework.stereotype.Service
 
