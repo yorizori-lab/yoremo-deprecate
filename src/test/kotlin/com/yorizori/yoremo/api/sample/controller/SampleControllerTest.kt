@@ -1,5 +1,9 @@
 package com.yorizori.yoremo.api.sample.controller
 
+import com.ninjasquad.springmockk.MockkBean
+import com.yorizori.yoremo.api.sample.usecase.GetCatsUseCase
+import com.yorizori.yoremo.api.sample.usecase.GetSampleUseCase
+import com.yorizori.yoremo.api.sample.usecase.SaveSampleUseCase
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest
@@ -10,6 +14,15 @@ class SampleControllerTest {
 
     @Autowired
     private lateinit var webTestClient: WebTestClient
+
+    @MockkBean
+    private lateinit var saveSampleUseCase: SaveSampleUseCase
+
+    @MockkBean
+    private lateinit var getSampleUseCase: GetSampleUseCase
+
+    @MockkBean
+    private lateinit var getCatsUseCase: GetCatsUseCase
 
     @Test
     fun echo() {
