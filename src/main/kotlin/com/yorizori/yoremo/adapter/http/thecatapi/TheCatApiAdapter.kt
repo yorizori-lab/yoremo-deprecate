@@ -37,7 +37,7 @@ class TheCatApiAdapter(
             .build()
     }
 
-    suspend fun searchImages(
+    fun searchImages(
         requestParam: GetCatImages.RequestParam
     ): Flow<GetCatImages.Response> {
         return webClient
