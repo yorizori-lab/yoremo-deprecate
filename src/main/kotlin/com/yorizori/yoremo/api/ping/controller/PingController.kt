@@ -1,4 +1,4 @@
-package com.yorizori.yoremo.ping.controller
+package com.yorizori.yoremo.api.ping.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
