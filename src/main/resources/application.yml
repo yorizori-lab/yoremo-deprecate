@@ -12,7 +12,14 @@ spring:
   jpa:
     open-in-view: false
 
+adapter:
+  http:
+    the-cat-api:
+      base-url: https://api.thecatapi.com
+      response-time-out-ms: 3000
+
 logging:
-    level:
-        org.springframework.web: DEBUG
-        org.springframework.r2dbc: DEBUG
+  level:
+    reactor.netty.http.client: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.r2dbc: DEBUG
