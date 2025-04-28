@@ -1,8 +1,8 @@
 spring:
   application:
     name: yoremo
-
-
+  profiles:
+    include: secrets
   r2dbc:
     url: r2dbc:postgresql://localhost:5432/test
     username: postgres
