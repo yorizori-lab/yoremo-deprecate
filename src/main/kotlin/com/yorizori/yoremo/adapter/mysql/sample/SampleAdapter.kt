@@ -18,7 +18,7 @@ class SampleAdapter(
         return sampleRepository.findById(id)?.toModel()
     }
 
-    suspend fun update(id: Long, message: String): Sample? {
+    suspend fun update(id: Long, message: String): Sample {
         val existingSample = sampleRepository.findById(id)
             ?: throw ResponseStatusException(
                 HttpStatus.NOT_FOUND,

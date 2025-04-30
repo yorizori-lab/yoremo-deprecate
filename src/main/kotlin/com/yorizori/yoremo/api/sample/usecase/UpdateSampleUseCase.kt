@@ -13,7 +13,7 @@ class UpdateSampleUseCase(
     ): UpdateSample.Response {
         return sampleAdapter.update(pathVariable.id, request.message)
             .let {
-                UpdateSample.Response(id = it!!.id!!, message = it.message)
+                UpdateSample.Response(id = it.id!!, message = it.message)
             }
     }
 }
