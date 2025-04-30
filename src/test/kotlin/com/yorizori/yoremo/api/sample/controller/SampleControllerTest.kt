@@ -4,6 +4,7 @@ import com.ninjasquad.springmockk.MockkBean
 import com.yorizori.yoremo.api.sample.usecase.GetCatsUseCase
 import com.yorizori.yoremo.api.sample.usecase.GetSampleUseCase
 import com.yorizori.yoremo.api.sample.usecase.SaveSampleUseCase
+import com.yorizori.yoremo.api.sample.usecase.UpdateSampleUseCase
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest
@@ -23,6 +24,9 @@ class SampleControllerTest {
 
     @MockkBean
     private lateinit var getCatsUseCase: GetCatsUseCase
+
+    @MockkBean
+    private lateinit var updateSampleUseCase: UpdateSampleUseCase
 
     @Test
     fun echo() {
