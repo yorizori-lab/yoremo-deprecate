@@ -43,10 +43,10 @@ class SampleController(
 
     @PutMapping("/samples/{id}")
     suspend fun update(
-        @PathVariable id: Long,
+        id: UpdateSample.PathVariable,
         @RequestBody request: UpdateSample.Request
     ): UpdateSample.Response {
-        return updateSampleUseCase.update(UpdateSample.PathVariable(id), request)
+        return updateSampleUseCase.update(id, request)
     }
 
     @GetMapping("/cats")
