@@ -1,4 +1,4 @@
-package com.yorizori.yoremo.adapter.mysql.common
+package com.yorizori.yoremo.adapter.postgresql.common
 
 import org.springframework.data.annotation.CreatedDate
 import org.springframework.data.annotation.LastModifiedDate

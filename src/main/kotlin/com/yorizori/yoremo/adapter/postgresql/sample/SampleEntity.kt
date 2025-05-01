@@ -1,7 +1,7 @@
-package com.yorizori.yoremo.adapter.mysql.sample
+package com.yorizori.yoremo.adapter.postgresql.sample
 
 
-import com.yorizori.yoremo.adapter.mysql.common.BaseEntity
+import com.yorizori.yoremo.adapter.postgresql.common.BaseEntity
 import com.yorizori.yoremo.model.Sample
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table

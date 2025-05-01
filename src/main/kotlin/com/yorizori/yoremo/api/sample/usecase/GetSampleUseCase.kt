@@ -1,6 +1,6 @@
 package com.yorizori.yoremo.api.sample.usecase
 
-import com.yorizori.yoremo.adapter.mysql.sample.SampleAdapter
+import com.yorizori.yoremo.adapter.postgresql.sample.SampleAdapter
 import com.yorizori.yoremo.api.sample.controller.message.GetSample
 import org.springframework.stereotype.Service
 

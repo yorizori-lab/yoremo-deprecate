@@ -1,4 +1,4 @@
-package com.yorizori.yoremo.adapter.mysql.sample
+package com.yorizori.yoremo.adapter.postgresql.sample
 
 import com.yorizori.yoremo.model.Sample
 import org.springframework.http.HttpStatus
