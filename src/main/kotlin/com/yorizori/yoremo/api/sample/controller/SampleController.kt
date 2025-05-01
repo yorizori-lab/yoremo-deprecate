@@ -1,14 +1,7 @@
 package com.yorizori.yoremo.api.sample.controller
 
-import com.yorizori.yoremo.api.sample.controller.message.GetCats
-import com.yorizori.yoremo.api.sample.controller.message.GetEcho
-import com.yorizori.yoremo.api.sample.controller.message.GetSample
-import com.yorizori.yoremo.api.sample.controller.message.SaveSample
-import com.yorizori.yoremo.api.sample.controller.message.UpdateSample
-import com.yorizori.yoremo.api.sample.usecase.GetCatsUseCase
-import com.yorizori.yoremo.api.sample.usecase.GetSampleUseCase
-import com.yorizori.yoremo.api.sample.usecase.SaveSampleUseCase
-import com.yorizori.yoremo.api.sample.usecase.UpdateSampleUseCase
+import com.yorizori.yoremo.api.sample.controller.message.*
+import com.yorizori.yoremo.api.sample.usecase.*
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -17,7 +10,8 @@ class SampleController(
     private val saveSampleUseCase: SaveSampleUseCase,
     private val getSampleUseCase: GetSampleUseCase,
     private val updateSampleUseCase: UpdateSampleUseCase,
-    private val getCatsUseCase: GetCatsUseCase
+    private val getCatsUseCase: GetCatsUseCase,
+    private val searchSampleUseCase: SearchSampleUseCase
 ) {
 
     @GetMapping("/echo")
@@ -47,6 +41,13 @@ class SampleController(
         @RequestBody request: UpdateSample.Request
     ): UpdateSample.Response {
         return updateSampleUseCase.update(id, request)
+    }
+
+    @GetMapping("/samples/search")
+    suspend fun getByMessage(
+        request: SearchSample.RequestParam
+    ): SearchSample.Response {
+        return searchSampleUseCase.search(request)
     }
 
     @GetMapping("/cats")
